@@ -1,0 +1,21 @@
+﻿.Form {
+    width: 150px;
+    color: white;
+}
+
+.error {
+    color: red;
+    width: 150px;
+}
+.submit {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid #ce00ff;
+    transition-duration: 0.4s;
+    margin: 20px auto;
+}
+
+.submit:hover{
+  background-color: #ce00ff; 
+  color: white;
+}

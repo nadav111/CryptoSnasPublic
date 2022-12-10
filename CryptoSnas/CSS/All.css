@@ -1,0 +1,26 @@
+﻿body {
+    background-image: url('../Images/Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 2000px;
+}
+
+.topnav a {
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Candara;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.topnav a:hover {
+    background-color: palevioletred;
+    color: red;
+}

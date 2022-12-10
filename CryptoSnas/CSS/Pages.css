@@ -1,0 +1,30 @@
+﻿.coin {
+    color: white;
+    font-family: 'Comic Sans MS';
+}
+
+.titles {
+    color: white;
+    font-family: Bahnschrift;
+}
+
+.img {
+    display: block;
+}
+
+.link {
+    color: white;
+}
+.Q {
+    color: white;
+    font-family: Bahnschrift;
+    font-display: block;
+    text-decoration: underline;
+}
+.usersTable {
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+}

@@ -1,0 +1,18 @@
+﻿.welcome {
+    color: white;
+    font-family: Bahnschrift;
+}
+
+.Q {
+    color: white;
+    font-family: Bahnschrift;
+    font-display: block;
+    text-decoration: underline;
+}
+
+.p1 {
+    color: white;
+    font-family: Bahnschrift;
+    font-style: italic;
+    line-height: 1.6;
+}

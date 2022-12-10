@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CryptoSnasMaster.master.cs" Inherits="CryptoSnas.CryptoSnasMaster" ClientIDMode="Static"%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Crypto.Snas</title>
+    <link href="../CSS/All.css" rel="stylesheet" />
+    <link href="../CSS/CryptoList.css" rel="stylesheet" />
+    <link href="../CSS/DropDown.css" rel="stylesheet" />
+    <script src="../JavaScript/DropDown.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" name="form1" runat="server">
+        <div>
+                 <div class="topnav">
+                 <a href="../WebPages/Home.aspx">Main</a>
+                 <div class="dropdown">
+                    <a href="../WebPages/Currencies.aspx" onmouseover="DropDown()" class="dropbtn">Currencies</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../Webpages/Currencies.aspx">Cryptos</a>
+                            <a href="../Webpages/CurrencyExchangeRates.aspx">Exchange Rates</a>
+                            <a href="../Webpages/Stocks.aspx">Stocks</a>
+                        </div>
+                 </div>
+                 <a href="../Webpages/Chat.aspx">Chat</a>
+                 <a href="../WebPages/Exchanges.aspx">Exchanges</a>
+                 <a href="../WebPages/Defi.aspx">Defi</a>
+                 <a href="../Webpages/Metaverse.aspx">Metaverse</a>
+                 <a href="../WebPages/NFTs.aspx">NFTs</a>
+                    <div class="topnav-right">
+                         <a runat="server" id="login" href="../WebPages/Login.aspx">Login</a>
+                         <a runat="server" id="register" href="../WebPages/Register.aspx">Register</a>
+                         <a href="../WebPages/ForgotPassword.aspx">Forgot Password</a>
+                         <a runat="server" id="users" href= "../Webpages/Users.aspx">Users</a>
+                         <a runat="server" id="logout" href= "../Webpages/Logout.aspx">Logout</a>
+                    </div>
+                 </div>
+            <div id="idMsg" runat="server" class="Q"><%="Welcome " + Session["userName"] %></div><br />
+                 <br />
+            <div class="CryptoList">
+
+                 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js">
+                 </script>
+
+                 <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,52,4172" currency="USD" theme="dark" transparent="true" show-symbol-logo="true" >
+
+                 </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+</body>
+</html>
